@@ -216,7 +216,7 @@ class tx_linkhandler_recordTab implements tx_linkhandler_tabHandler {
 			$dblist = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TBE_browser_recordListRTE'); /** @var $dblist TBE_browser_recordListRTE */
 			$dblist->setAddPassOnParams($this->addPassOnParams);
 			$dblist->browselistObj=$this->browseLinksObj;
-			$dblist->this->pObjScript=$this->browseLinksObj->this->pObjScript;
+			//$dblist->this->pObjScript=$this->browseLinksObj->this->pObjScript;
 			$dblist->backPath = $GLOBALS['BACK_PATH'];
 			$dblist->thumbs = 0;
 			$dblist->calcPerms = $GLOBALS['BE_USER']->calcPerms($pageinfo);
